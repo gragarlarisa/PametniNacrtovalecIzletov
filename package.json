@@ -1,0 +1,15 @@
+{
+  "name": "pametninacrtovalecizletov",
+  "version": "1.0.0",
+  "description": "**Pametni načrtovalec izletov** je spletna aplikacija, ki uporabniku pomaga pri načrtovanju izleta. Uporabnik vnese želeno lokacijo in datum, aplikacija pa s pomočjo več zunanjih spletnih storitev pridobi podatke o lokaciji, vremenski napovedi in zanimivostih v okolici.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2"
+  }
+}

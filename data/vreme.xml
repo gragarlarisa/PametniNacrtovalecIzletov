@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vremenskiPodatki>
+    <vreme id="V001" lokacijaId="L001">
+        <datum>2026-10-15</datum>
+        <temperatura>16</temperatura>
+        <stanje>Delno oblacno</stanje>
+        <padavine>0</padavine>
+        <veter>12</veter>
+    </vreme>
+    <vreme id="V002" lokacijaId="L002">
+        <datum>2026-10-15</datum>
+        <temperatura>17</temperatura>
+        <stanje>Soncno</stanje>
+        <padavine>0</padavine>
+        <veter>8</veter>
+    </vreme>
+    <vreme id="V003" lokacijaId="L003">
+        <datum>2026-10-15</datum>
+        <temperatura>12</temperatura>
+        <stanje>Oblacno</stanje>
+        <padavine>1</padavine>
+        <veter>10</veter>
+    </vreme>
+    <vreme id="V004" lokacijaId="L004">
+        <datum>2026-10-15</datum>
+        <temperatura>19</temperatura>
+        <stanje>Soncno</stanje>
+        <padavine>0</padavine>
+        <veter>15</veter>
+    </vreme>
+    <vreme id="V005" lokacijaId="L005">
+        <datum>2026-10-15</datum>
+        <temperatura>18</temperatura>
+        <stanje>Delno oblacno</stanje>
+        <padavine>0</padavine>
+        <veter>20</veter>
+    </vreme>
+    <vreme id="V006" lokacijaId="L006">
+        <datum>2026-10-15</datum>
+        <temperatura>15</temperatura>
+        <stanje>Dez</stanje>
+        <padavine>5</padavine>
+        <veter>11</veter>
+    </vreme>
+    <vreme id="V007" lokacijaId="L007">
+        <datum>2026-10-15</datum>
+        <temperatura>16</temperatura>
+        <stanje>Oblacno</stanje>
+        <padavine>0</padavine>
+        <veter>9</veter>
+    </vreme>
+    <vreme id="V008" lokacijaId="L008">
+        <datum>2026-10-15</datum>
+        <temperatura>10</temperatura>
+        <stanje>Dez</stanje>
+        <padavine>8</padavine>
+        <veter>18</veter>
+    </vreme>
+    <vreme id="V009" lokacijaId="L009">
+        <datum>2026-10-15</datum>
+        <temperatura>14</temperatura>
+        <stanje>Delno oblacno</stanje>
+        <padavine>0</padavine>
+        <veter>13</veter>
+    </vreme>
+    <vreme id="V010" lokacijaId="L010">
+        <datum>2026-10-15</datum>
+        <temperatura>18</temperatura>
+        <stanje>Soncno</stanje>
+        <padavine>0</padavine>
+        <veter>16</veter>
+    </vreme>
+</vremenskiPodatki>

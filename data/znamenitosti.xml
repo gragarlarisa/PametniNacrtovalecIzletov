@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<znamenitosti>
+    <znamenitost id="Z001" lokacijaId="L001">
+        <ime>Stara trta</ime>
+        <vrsta>Muzej in kulturna dediscina</vrsta>
+        <cenaVstopnine>0</cenaVstopnine>
+        <ocena>4.7</ocena>
+        <datumDodajanja>2026-10-01</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z002" lokacijaId="L001">
+        <ime>Mariborski grad</ime>
+        <vrsta>Grad</vrsta>
+        <cenaVstopnine>8</cenaVstopnine>
+        <ocena>4.5</ocena>
+        <datumDodajanja>2026-10-02</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z003" lokacijaId="L002">
+        <ime>Ljubljanski grad</ime>
+        <vrsta>Grad</vrsta>
+        <cenaVstopnine>12</cenaVstopnine>
+        <ocena>4.8</ocena>
+        <datumDodajanja>2026-10-03</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z004" lokacijaId="L002">
+        <ime>Tromostovje</ime>
+        <vrsta>Arhitektura</vrsta>
+        <cenaVstopnine>0</cenaVstopnine>
+        <ocena>4.8</ocena>
+        <datumDodajanja>2026-10-04</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z005" lokacijaId="L003">
+        <ime>Blejski grad</ime>
+        <vrsta>Grad</vrsta>
+        <cenaVstopnine>18</cenaVstopnine>
+        <ocena>4.6</ocena>
+        <datumDodajanja>2026-10-05</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z006" lokacijaId="L003">
+        <ime>Blejski otok</ime>
+        <vrsta>Naravna in kulturna dediscina</vrsta>
+        <cenaVstopnine>0</cenaVstopnine>
+        <ocena>4.7</ocena>
+        <datumDodajanja>2026-10-06</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z007" lokacijaId="L004">
+        <ime>Pretorska palaca</ime>
+        <vrsta>Zgodovinska stavba</vrsta>
+        <cenaVstopnine>5</cenaVstopnine>
+        <ocena>4.4</ocena>
+        <datumDodajanja>2026-10-07</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z008" lokacijaId="L005">
+        <ime>Walls of Piran</ime>
+        <vrsta>Razgledna tocka</vrsta>
+        <cenaVstopnine>3</cenaVstopnine>
+        <ocena>4.6</ocena>
+        <datumDodajanja>2026-10-08</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z009" lokacijaId="L006">
+        <ime>Stari grad Celje</ime>
+        <vrsta>Grad</vrsta>
+        <cenaVstopnine>7</cenaVstopnine>
+        <ocena>4.7</ocena>
+        <datumDodajanja>2026-10-09</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z010" lokacijaId="L007">
+        <ime>Ptujski grad</ime>
+        <vrsta>Muzej in grad</vrsta>
+        <cenaVstopnine>10</cenaVstopnine>
+        <ocena>4.6</ocena>
+        <datumDodajanja>2026-10-10</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z011" lokacijaId="L008">
+        <ime>Slap Boka</ime>
+        <vrsta>Naravna znamenitost</vrsta>
+        <cenaVstopnine>0</cenaVstopnine>
+        <ocena>4.9</ocena>
+        <datumDodajanja>2026-10-11</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z012" lokacijaId="L009">
+        <ime>Samostan Kostanjevica</ime>
+        <vrsta>Kulturna dediscina</vrsta>
+        <cenaVstopnine>4</cenaVstopnine>
+        <ocena>4.5</ocena>
+        <datumDodajanja>2026-10-12</datumDodajanja>
+    </znamenitost>
+    <znamenitost id="Z013" lokacijaId="L010">
+        <ime>Svetilnik Izola</ime>
+        <vrsta>Razgledna tocka</vrsta>
+        <cenaVstopnine>0</cenaVstopnine>
+        <ocena>4.3</ocena>
+        <datumDodajanja></datumDodajanja>
+    </znamenitost>
+</znamenitosti>

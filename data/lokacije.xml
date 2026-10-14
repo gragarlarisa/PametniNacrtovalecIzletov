@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lokacije>
+    <lokacija id="L001">
+        <ime>Maribor</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>97000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-01</datumDodajanja>
+    </lokacija>
+    <lokacija id="L002">
+        <ime>Ljubljana</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>290000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-02</datumDodajanja>
+    </lokacija>
+    <lokacija id="L003">
+        <ime>Bled</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>8000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-03</datumDodajanja>
+    </lokacija>
+    <lokacija id="L004">
+        <ime>Koper</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>26000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-04</datumDodajanja>
+    </lokacija>
+    <lokacija id="L005">
+        <ime>Piran</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>18000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-05</datumDodajanja>
+    </lokacija>
+    <lokacija id="L006">
+        <ime>Celje</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>49000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-06</datumDodajanja>
+    </lokacija>
+    <lokacija id="L007">
+        <ime>Ptuj</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>23000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-07</datumDodajanja>
+    </lokacija>
+    <lokacija id="L008">
+        <ime>Bovec</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>1600</steviloPrebivalcev>
+        <datumDodajanja>2026-10-08</datumDodajanja>
+    </lokacija>
+    <lokacija id="L009">
+        <ime>Nova Gorica</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>13000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-09</datumDodajanja>
+    </lokacija>
+    <lokacija id="L010">
+        <ime>Izola</ime>
+        <drzava>Slovenija</drzava>
+        <steviloPrebivalcev>17000</steviloPrebivalcev>
+        <datumDodajanja>2026-10-10</datumDodajanja>
+    </lokacija>
+</lokacije>

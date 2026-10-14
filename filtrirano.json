@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Z001",
+    "ime": "Stara trta",
+    "vrsta": "Muzej in kulturna dediscina",
+    "cenaVstopnine": 0,
+    "ocena": 4.7,
+    "datumDodajanja": "2026-10-01",
+    "lokacijaId": "L001",
+    "mesto": "Maribor",
+    "drzava": "Slovenija",
+    "datumVremena": "2026-10-15",
+    "temperatura": 16,
+    "stanjeVremena": "Delno oblacno"
+  },
+  {
+    "id": "Z002",
+    "ime": "Mariborski grad",
+    "vrsta": "Grad",
+    "cenaVstopnine": 8,
+    "ocena": 4.5,
+    "datumDodajanja": "2026-10-02",
+    "lokacijaId": "L001",
+    "mesto": "Maribor",
+    "drzava": "Slovenija",
+    "datumVremena": "2026-10-15",
+    "temperatura": 16,
+    "stanjeVremena": "Delno oblacno"
+  }
+]

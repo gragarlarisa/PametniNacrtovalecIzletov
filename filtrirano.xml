@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filtriraneZnamenitosti>
+  <znamenitost id="Z001" lokacijaId="L001">
+    <ime>Stara trta</ime>
+    <vrsta>Muzej in kulturna dediscina</vrsta>
+    <cenaVstopnine>0</cenaVstopnine>
+    <ocena>4.7</ocena>
+    <datumDodajanja>2026-10-01</datumDodajanja>
+    <mesto>Maribor</mesto>
+    <drzava>Slovenija</drzava>
+    <datumVremena>2026-10-15</datumVremena>
+    <temperatura>16</temperatura>
+    <stanjeVremena>Delno oblacno</stanjeVremena>
+  </znamenitost>
+  <znamenitost id="Z002" lokacijaId="L001">
+    <ime>Mariborski grad</ime>
+    <vrsta>Grad</vrsta>
+    <cenaVstopnine>8</cenaVstopnine>
+    <ocena>4.5</ocena>
+    <datumDodajanja>2026-10-02</datumDodajanja>
+    <mesto>Maribor</mesto>
+    <drzava>Slovenija</drzava>
+    <datumVremena>2026-10-15</datumVremena>
+    <temperatura>16</temperatura>
+    <stanjeVremena>Delno oblacno</stanjeVremena>
+  </znamenitost>
+</filtriraneZnamenitosti>
