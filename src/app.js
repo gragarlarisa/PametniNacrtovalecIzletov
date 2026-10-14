@@ -68,12 +68,12 @@ try {
         };
     });
 
-    // Filter: znamenitosti v Mariboru
-    const izbranoMesto = "Maribor";
+   // Filter glede na mesto, podano ob zagonu programa
+const izbranoMesto = process.argv[2] || "Maribor";
 
-    const filtrirano = povezaneZnamenitosti.filter(
-        zapis => zapis.mesto.toLowerCase() === izbranoMesto.toLowerCase()
-    );
+const filtrirano = povezaneZnamenitosti.filter(
+    zapis => zapis.mesto.toLowerCase() === izbranoMesto.toLowerCase()
+);
 
     // Pregleden izpis v konzolo
     console.log(`\nZnamenitosti v mestu ${izbranoMesto}:`);
