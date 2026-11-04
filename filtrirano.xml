@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filtriraneZnamenitosti>
-  <znamenitost id="Z003" lokacijaId="L002">
-    <ime>Ljubljanski grad</ime>
+  <znamenitost id="Z005" lokacijaId="L003">
+    <ime>Blejski grad</ime>
     <vrsta>Grad</vrsta>
-    <cenaVstopnine>12</cenaVstopnine>
-    <ocena>4.8</ocena>
-    <datumDodajanja>2026-10-03</datumDodajanja>
-    <mesto>Ljubljana</mesto>
+    <cenaVstopnine>18</cenaVstopnine>
+    <ocena>4.6</ocena>
+    <datumDodajanja>2026-10-05</datumDodajanja>
+    <mesto>Bled</mesto>
     <drzava>Slovenija</drzava>
     <datumVremena>2026-10-15</datumVremena>
-    <temperatura>17</temperatura>
-    <stanjeVremena>Soncno</stanjeVremena>
+    <temperatura>12</temperatura>
+    <stanjeVremena>Oblacno</stanjeVremena>
   </znamenitost>
-  <znamenitost id="Z004" lokacijaId="L002">
-    <ime>Tromostovje</ime>
-    <vrsta>Arhitektura</vrsta>
+  <znamenitost id="Z006" lokacijaId="L003">
+    <ime>Blejski otok</ime>
+    <vrsta>Naravna in kulturna dediscina</vrsta>
     <cenaVstopnine>0</cenaVstopnine>
-    <ocena>4.8</ocena>
-    <datumDodajanja>2026-10-04</datumDodajanja>
-    <mesto>Ljubljana</mesto>
+    <ocena>4.7</ocena>
+    <datumDodajanja>2026-10-06</datumDodajanja>
+    <mesto>Bled</mesto>
     <drzava>Slovenija</drzava>
     <datumVremena>2026-10-15</datumVremena>
-    <temperatura>17</temperatura>
-    <stanjeVremena>Soncno</stanjeVremena>
+    <temperatura>12</temperatura>
+    <stanjeVremena>Oblacno</stanjeVremena>
   </znamenitost>
 </filtriraneZnamenitosti>

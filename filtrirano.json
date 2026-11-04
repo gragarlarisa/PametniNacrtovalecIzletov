@@ -1,30 +1,30 @@
 [
   {
-    "id": "Z003",
-    "ime": "Ljubljanski grad",
+    "id": "Z005",
+    "ime": "Blejski grad",
     "vrsta": "Grad",
-    "cenaVstopnine": 12,
-    "ocena": 4.8,
-    "datumDodajanja": "2026-10-03",
-    "lokacijaId": "L002",
-    "mesto": "Ljubljana",
+    "cenaVstopnine": 18,
+    "ocena": 4.6,
+    "datumDodajanja": "2026-10-05",
+    "lokacijaId": "L003",
+    "mesto": "Bled",
     "drzava": "Slovenija",
     "datumVremena": "2026-10-15",
-    "temperatura": 17,
-    "stanjeVremena": "Soncno"
+    "temperatura": 12,
+    "stanjeVremena": "Oblacno"
   },
   {
-    "id": "Z004",
-    "ime": "Tromostovje",
-    "vrsta": "Arhitektura",
+    "id": "Z006",
+    "ime": "Blejski otok",
+    "vrsta": "Naravna in kulturna dediscina",
     "cenaVstopnine": 0,
-    "ocena": 4.8,
-    "datumDodajanja": "2026-10-04",
-    "lokacijaId": "L002",
-    "mesto": "Ljubljana",
+    "ocena": 4.7,
+    "datumDodajanja": "2026-10-06",
+    "lokacijaId": "L003",
+    "mesto": "Bled",
     "drzava": "Slovenija",
     "datumVremena": "2026-10-15",
-    "temperatura": 17,
-    "stanjeVremena": "Soncno"
+    "temperatura": 12,
+    "stanjeVremena": "Oblacno"
   }
 ]

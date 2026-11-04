@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fast-xml-parser": "^5.11.2"
+    "express": "^5.3.0",
+    "fast-xml-parser": "^5.11.2",
+    "iconv-lite": "^0.7.3",
+    "puppeteer": "^18.1.0",
+    "px": "^0.1.2"
   }
 }
