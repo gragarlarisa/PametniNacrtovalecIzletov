@@ -1,13 +1,15 @@
+require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const iconv = require('iconv-lite');
 const Px = require('px');
+const { ustvariNacrt } = require('./src/aiPlanner');
 
 const app = express();
 const PORT = 3000;
-
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Preberemo PC-Axis datoteko
@@ -91,6 +93,47 @@ app.get('/api/turizem', (req, res) => {
 
     } catch (napaka) {
         res.status(500).json({ napaka: napaka.message });
+    }
+});
+
+/**
+ * API za ustvarjanje AI načrta izleta.
+ * Podatke prejme s spletne strani in jih pošlje Gemini.
+ */
+app.post('/api/ai-izlet', async (req, res) => {
+    try {
+        const { kraj, datum, vrsta, trajanje } = req.body || {};
+
+        // Preverimo uporabniške podatke
+        const podatki = [kraj, datum, vrsta, trajanje];
+
+        if (podatki.some(v =>
+            typeof v !== 'string' ||
+            v.trim().length === 0 ||
+            v.length > 150
+        )) {
+            return res.status(400).json({
+                napaka: 'Izpolniti moraš vsa polja za načrt izleta.'
+            });
+        }
+
+        // Pokličemo Gemini in dobimo objekt NacrtIzleta
+        const nacrt = await ustvariNacrt(
+            kraj.trim(),
+            datum.trim(),
+            vrsta.trim(),
+            trajanje.trim()
+        );
+
+        // Pošljemo JSON nazaj spletni strani
+        res.json(nacrt);
+
+    } catch (napaka) {
+        console.error('Napaka Gemini:', napaka.message);
+
+        res.status(500).json({
+            napaka: 'AI načrta trenutno ni mogoče ustvariti. Poskusi znova.'
+        });
     }
 });
 

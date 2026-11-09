@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/genai": "^3.0.0",
+    "dotenv": "^18.0.10",
     "express": "^5.3.0",
     "fast-xml-parser": "^5.11.2",
     "iconv-lite": "^0.7.3",
+    "openai": "^7.54.0",
     "puppeteer": "^18.1.0",
     "px": "^0.1.2"
   }

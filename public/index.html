@@ -51,6 +51,76 @@
         #status {
             color: #555;
         }
+        
+.ai-kartica {
+    margin-top: 30px;
+}
+
+.ai-opis {
+    color: #526477;
+    line-height: 1.6;
+}
+
+.ai-obrazec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.ai-obrazec input,
+.ai-obrazec select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccd5df;
+    border-radius: 7px;
+    background: white;
+}
+
+.ai-gumb {
+    margin-top: 22px;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #4285f4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ai-gumb:hover {
+    background: #2769d2;
+}
+
+.ai-gumb:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#ai-status {
+    margin-top: 16px;
+    color: #526477;
+}
+
+#ai-rezultat {
+    margin-top: 20px;
+}
+
+.aktivnost {
+    background: #f5f7fb;
+    border-left: 4px solid #4285f4;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+.aktivnost h3 {
+    margin-top: 0;
+    color: #243b53;
+}
+
     </style>
 </head>
 
@@ -84,6 +154,80 @@
         <p id="status">Nalagam podatke ...</p>
         <canvas id="turizemGraf"></canvas>
     </div>
+
+<!-- AI NAČRTOVALEC IZLETOV -->
+<div class="kartica ai-kartica">
+    <h2>✨ AI načrtovalec izletov</h2>
+
+    <p class="ai-opis">
+        Izberi kraj, datum in svoje želje.
+        Umetna inteligenca Gemini bo pripravila
+        prilagojen načrt izleta z aktivnostmi in urami.
+    </p>
+
+    <form id="ai-form">
+        <div class="ai-obrazec">
+            <div>
+                <label for="ai-kraj">Kraj izleta</label>
+                <input
+                    type="text"
+                    id="ai-kraj"
+                    value="Bled"
+                    placeholder="Npr. Bled"
+                    maxlength="150"
+                    required>
+            </div>
+
+            <div>
+                <label for="ai-datum">Datum izleta</label>
+                <input
+                    type="date"
+                    id="ai-datum"
+                    required>
+            </div>
+
+            <div>
+                <label for="ai-vrsta">Vrsta aktivnosti</label>
+                <select id="ai-vrsta">
+                    <option value="Narava in pohodništvo">
+                        Narava in pohodništvo
+                    </option>
+                    <option value="Kulturne znamenitosti">
+                        Kulturne znamenitosti
+                    </option>
+                    <option value="Družinski izlet">
+                        Družinski izlet
+                    </option>
+                    <option value="Romantični izlet">
+                        Romantični izlet
+                    </option>
+                    <option value="Aktivni izlet">
+                        Aktivni izlet
+                    </option>
+                    <option value="Kulinarika">
+                        Kulinarika
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <label for="ai-trajanje">Trajanje izleta</label>
+                <select id="ai-trajanje">
+                    <option value="Pol dneva">Pol dneva</option>
+                    <option value="Cel dan" selected>Cel dan</option>
+                    <option value="Dva dni">Dva dni</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="ai-gumb" id="ai-gumb">
+            ✨ Ustvari AI načrt izleta
+        </button>
+    </form>
+
+    <p id="ai-status" role="status" aria-live="polite"></p>
+    <div id="ai-rezultat"></div>
+</div>
 
     <script>
         let graf;
@@ -190,6 +334,85 @@
         meritevSelect.addEventListener('change', naloziGraf);
 
         zacetek();
+        
+// ======================================
+// AI NAČRTOVALEC IZLETOV
+// ======================================
+
+const aiForm = document.getElementById('ai-form');
+const aiGumb = document.getElementById('ai-gumb');
+const aiStatus = document.getElementById('ai-status');
+const aiRezultat = document.getElementById('ai-rezultat');
+
+aiForm.addEventListener('submit', async (dogodek) => {
+    dogodek.preventDefault();
+
+    const podatki = {
+        kraj: document.getElementById('ai-kraj').value,
+        datum: document.getElementById('ai-datum').value,
+        vrsta: document.getElementById('ai-vrsta').value,
+        trajanje: document.getElementById('ai-trajanje').value
+    };
+
+    aiGumb.disabled = true;
+    aiGumb.textContent = 'AI pripravlja načrt ...';
+    aiStatus.textContent = 'Počakaj, ustvarjam tvoj izlet ...';
+    aiRezultat.replaceChildren();
+
+    try {
+        const odgovor = await fetch('/api/ai-izlet', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(podatki)
+        });
+
+        const nacrt = await odgovor.json();
+
+        if (!odgovor.ok) {
+            throw new Error(
+                nacrt.napaka || 'Napaka pri ustvarjanju izleta.'
+            );
+        }
+
+        // Prikaz naslova
+        const naslov = document.createElement('h2');
+        naslov.textContent = nacrt.naslov;
+        aiRezultat.appendChild(naslov);
+
+        // Prikaz opisa
+        const opis = document.createElement('p');
+        opis.textContent = nacrt.opis;
+        aiRezultat.appendChild(opis);
+
+        // Prikaz aktivnosti
+        nacrt.aktivnosti.forEach(aktivnost => {
+            const kartica = document.createElement('div');
+            kartica.className = 'aktivnost';
+
+            const ime = document.createElement('h3');
+            ime.textContent =
+                `${aktivnost.ura} – ${aktivnost.naziv}`;
+
+            const podrobnosti = document.createElement('p');
+            podrobnosti.textContent = aktivnost.opis;
+
+            kartica.appendChild(ime);
+            kartica.appendChild(podrobnosti);
+            aiRezultat.appendChild(kartica);
+        });
+
+        aiStatus.textContent = 'Načrt izleta je pripravljen!';
+
+    } catch (napaka) {
+        aiStatus.textContent = napaka.message;
+    } finally {
+        aiGumb.disabled = false;
+        aiGumb.textContent = '✨ Ustvari AI načrt izleta';
+    }
+});
+
     </script>
 </body>
 </html>
